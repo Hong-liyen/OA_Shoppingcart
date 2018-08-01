@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses'],
+                ['2004', 1000, 400],
+                ['2005', 1170, 460],
+                ['2006', 660, 1120],
+                ['2007', 1030, 540]
+            ]);
+
+            var options = {
+                title: 'ACtivity',
+                curveType: 'function',
+                legend: {
+                    position: 'bottom'
+                }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">Shoptime</div>
+            <div class="menu">
+                <a href="" class="active">HOME</a>
+                <a href="">ORDER</a>
+                <a href="product.html">PRODUCT</a>
+            </div>
+            <div class="admin">ADMIN</div>
+        </div>
+    </header>
+    <div id="main">
+        <div class="container">
+            <div class="info">
+                <div class="left">OVERVIEW</div>
+                <div class="right">
+                    <div class="unit">
+                        <span>Weekly</span>
+                        <b>▾</b>
+                        <div class="list">
+                            <span>Daily</span>
+                            <span class="active">Weekly</span>
+                            <span>Monthly</span>
+                            <span>Yearly</span>
+                            <span>Custom</span>
+                        </div>
+                    </div>
+                    <div class="dates">
+                        <span>2018/6/6</span>
+                        <b>▸</b>
+                        <span>2018/6/13</span>
+                    </div>
+                </div>
+            </div>
+            <div class="n3">
+                <div class="panel">
+                    <div class="icon-rss">TOTAL REVENUE</div>
+                    <b class="green">54,540</b>
+                </div>
+                <div class="panel">
+                    <div class="icon-dropbox">TOTAL COST</div>
+                    <b class="red">12,660</b>
+                </div>
+                <div class="panel">
+                    <div class="icon-twitter">NET INCOME</div>
+                    <b class="blue">41,880</b>
+                </div>
+            </div>
+            <div class="n1">
+                <div id="chart" class="panel">
+
+                </div>
+            </div>
+            <div class="n2">
+                <div class="panel left">
+                    <b>Transaction Website</b>
+                    <div class="list">
+                        <div class="item">
+                            <span class="icon-facebook2"></span>
+                            <span class="name">facebook.com</span>
+                            <span class="num">45,836</span>
+                            <span class="rate green">20%
+                                <div class="tip">
+                                    <div>INCREASE
+                                        <b class="green">889</b> VIEWS</div>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="item">
+                            <span class="icon-google"></span>
+                            <span class="name">google.com</span>
+                            <span class="num">20,126</span>
+                            <span class="rate green">20%
+                                <div class="tip">
+                                    <div>INCREASE
+                                        <b class="green">889</b> VIEWS</div>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="item">
+                            <span class="icon-twitter"></span>
+                            <span class="name">twitter.com</span>
+                            <span class="num">30,005</span>
+                            <span class="rate red">30%
+                                <div class="tip">
+                                    <div>INCREASE
+                                        <b class="green">889</b> VIEWS</div>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="item">
+                            <span class="icon-wordpress"></span>
+                            <span class="name">wordpress.com</span>
+                            <span class="num">45,836</span>
+                            <span class="rate red">15%
+                                <div class="tip">
+                                    <div>INCREASE
+                                        <b class="green">889</b> VIEWS</div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel right">
+                    <b>Lastest Orders</b>
+                    <div class="list">
+                        <div class="item">
+                            <div class="pic">
+                                <img src="images/index01.png" alt="" srcset="">
+                            </div>
+                            <div class="info">
+                                <b>Vintage T-shirt</b>
+                                <span>2018/6/13 13:42</span>
+                                <span>Belle Willis</span>
+
+                            </div>
+                            <div class="total">
+                                <b>3,200</b>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pic">
+                                <img src="images/index02.png" alt="" srcset="">
+                            </div>
+                            <div class="info">
+                                <b>Vintage T-shirt</b>
+                                <span>2018/6/13 13:42</span>
+                                <span>Belle Willis</span>
+                            </div>
+                            <div class="total">
+                                <b>3,200</b>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pic">
+                                <img src="images/index03.png" alt="" srcset="">
+                            </div>
+                            <div class="info">
+                                <b>Vintage T-shirt</b>
+                                <span>2018/6/13 13:42</span>
+                                <span>Belle Willis</span>
+                            </div>
+                            <div class="total">
+                                <b>3,200</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

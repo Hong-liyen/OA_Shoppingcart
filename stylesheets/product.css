@@ -1,0 +1,638 @@
+/* line 1, ../sass/product.scss */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f0f0;
+  font-family: 'Microsoft Yahei',serif;
+}
+
+/* line 9, ../sass/product.scss */
+.green {
+  color: #80d31f;
+}
+
+/* line 13, ../sass/product.scss */
+.red {
+  color: #d0001b;
+}
+
+/* line 17, ../sass/product.scss */
+.blue {
+  color: #4a90e2;
+}
+
+/* line 21, ../sass/product.scss */
+.yellow {
+  color: #f5a622;
+}
+
+/* line 25, ../sass/product.scss */
+.gray {
+  color: #9b9b9b;
+}
+
+/* line 29, ../sass/product.scss */
+.b-green {
+  background-color: #80d31f;
+}
+
+/* line 33, ../sass/product.scss */
+.b-red {
+  background-color: #d0001b;
+}
+
+/* line 37, ../sass/product.scss */
+.b-blue {
+  background-color: #4a90e2;
+}
+
+/* line 41, ../sass/product.scss */
+.b-yellow {
+  background-color: #f5a622;
+}
+
+/* line 45, ../sass/product.scss */
+.b-gray {
+  background-color: #9b9b9b;
+}
+
+/* line 49, ../sass/product.scss */
+.container {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 56, ../sass/product.scss */
+#header {
+  width: 100%;
+  background-color: #000;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+/* line 62, ../sass/product.scss */
+#header .container {
+  padding-bottom: 32px;
+}
+/* line 64, ../sass/product.scss */
+#header .container > * {
+  float: left;
+  display: inline-block;
+}
+/* line 68, ../sass/product.scss */
+#header .container .logo {
+  width: 150px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+}
+/* line 75, ../sass/product.scss */
+#header .container .admin {
+  width: 60px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-align: right;
+}
+/* line 82, ../sass/product.scss */
+#header .container .menu {
+  width: calc(100% - 150px - 60px);
+}
+/* line 84, ../sass/product.scss */
+#header .container .menu > * {
+  position: relative;
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+  font-size: 16px;
+  color: #9b9b9b;
+  padding: 0 16px;
+}
+/* line 92, ../sass/product.scss */
+#header .container .menu > *:after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  display: inline-block;
+  background-color: #9b9b9b;
+  opacity: 0;
+}
+/* line 103, ../sass/product.scss */
+#header .container .menu > *.active, #header .container .menu > *:hover {
+  color: #fff;
+}
+/* line 106, ../sass/product.scss */
+#header .container .menu > *.active:after, #header .container .menu > *:hover:after {
+  background-color: #fff;
+  opacity: 1;
+}
+
+/* line 116, ../sass/product.scss */
+.checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 124, ../sass/product.scss */
+.checkbox > input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  z-index: 1;
+  display: none;
+}
+/* line 132, ../sass/product.scss */
+.checkbox > span {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+
+/* line 144, ../sass/product.scss */
+#main .container > .info {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+/* line 148, ../sass/product.scss */
+#main .container > .info > * {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 34px;
+}
+/* line 154, ../sass/product.scss */
+#main .container > .info .left {
+  text-align: left;
+  margin-top: 0.5em;
+}
+/* line 158, ../sass/product.scss */
+#main .container > .info .right {
+  text-align: right;
+}
+/* line 160, ../sass/product.scss */
+#main .container > .info .right > a {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 8px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+}
+/* line 172, ../sass/product.scss */
+#main .container > .info .right > a:after {
+  content: '+';
+  margin-left: 4px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* line 185, ../sass/product.scss */
+.table-list {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: 16px;
+}
+/* line 191, ../sass/product.scss */
+.table-list thead tr th {
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+}
+/* line 204, ../sass/product.scss */
+.table-list tbody tr:nth-child(2n + 2) td {
+  background-color: #ebebeb;
+}
+/* line 208, ../sass/product.scss */
+.table-list tbody tr td {
+  padding: 12px;
+}
+/* line 210, ../sass/product.scss */
+.table-list tbody tr td.product {
+  text-align: left;
+}
+/* line 212, ../sass/product.scss */
+.table-list tbody tr td.product .checkbox {
+  vertical-align: top;
+  margin: 15px;
+}
+/* line 216, ../sass/product.scss */
+.table-list tbody tr td.product .pic {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  display: inline-block;
+}
+/* line 221, ../sass/product.scss */
+.table-list tbody tr td.product .pic > img {
+  width: 100%;
+}
+/* line 225, ../sass/product.scss */
+.table-list tbody tr td.product .title {
+  line-height: 3.5;
+}
+/* line 229, ../sass/product.scss */
+.table-list tbody tr td.colspan-size-color-inventory {
+  padding: 0;
+  padding-top: 20px;
+}
+/* line 232, ../sass/product.scss */
+.table-list tbody tr td.colspan-size-color-inventory .item {
+  display: inline-block;
+  width: 100%;
+  height: 58px;
+  padding-top: 8px;
+}
+/* line 237, ../sass/product.scss */
+.table-list tbody tr td.colspan-size-color-inventory .item + .item {
+  border-top: 1px solid #ccc;
+}
+/* line 240, ../sass/product.scss */
+.table-list tbody tr td.colspan-size-color-inventory .item > * {
+  float: left;
+  display: inline-block;
+}
+/* line 243, ../sass/product.scss */
+.table-list tbody tr td.colspan-size-color-inventory .item > * span {
+  font-size: 14px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  color: #000;
+}
+/* line 253, ../sass/product.scss */
+.table-list tbody tr td.colspan-size-color-inventory .item .size {
+  text-align: left;
+  width: 70px;
+}
+/* line 257, ../sass/product.scss */
+.table-list tbody tr td.colspan-size-color-inventory .item .color {
+  width: 80px;
+  text-align: left;
+}
+/* line 261, ../sass/product.scss */
+.table-list tbody tr td.colspan-size-color-inventory .item .inventory {
+  width: 100px;
+}
+/* line 267, ../sass/product.scss */
+.table-list tbody tr td.status .select {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 34px;
+  line-height: 34px;
+  padding-bottom: 6px;
+}
+/* line 275, ../sass/product.scss */
+.table-list tbody tr td.status .select:hover .list {
+  display: inline-block;
+}
+/* line 279, ../sass/product.scss */
+.table-list tbody tr td.status .select > span {
+  display: inline-block;
+  color: #fff;
+  padding: 0 26px 0 20px;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+/* line 287, ../sass/product.scss */
+.table-list tbody tr td.status .select > span:after {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  content: '';
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(45deg);
+  width: 5px;
+  height: 5px;
+}
+/* line 299, ../sass/product.scss */
+.table-list tbody tr td.status .select .list {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  box-shadow: 1px 2px 10px 0 #9b9b9b;
+  border-radius: 2px;
+}
+/* line 308, ../sass/product.scss */
+.table-list tbody tr td.status .select .list > * {
+  display: inline-block;
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+}
+/* line 316, ../sass/product.scss */
+.table-list tbody tr td.status .select .list > *.active, .table-list tbody tr td.status .select .list > *:hover {
+  background-color: #000;
+  color: #fff;
+}
+/* line 325, ../sass/product.scss */
+.table-list tbody tr td span {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  color: #000;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+/* line 338, ../sass/product.scss */
+#box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+/* line 345, ../sass/product.scss */
+#box.show {
+  display: inline-block;
+}
+/* line 348, ../sass/product.scss */
+#box .content {
+  position: absolute;
+  left: calc(50% - 948px / 2);
+  top: 80px;
+  display: inline-block;
+  width: 940px;
+  max-height: calc(100% - 80px - 20px);
+  background-color: #fff;
+  box-shadow: 0 0 10px black;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 999;
+}
+/* line 360, ../sass/product.scss */
+#box .content .title {
+  display: inline-block;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  padding-left: 18px;
+  font-size: 24px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+}
+/* line 371, ../sass/product.scss */
+#box .content .title a {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  cursor: pointer;
+}
+/* line 381, ../sass/product.scss */
+#box .content .main {
+  display: inline-block;
+  width: calc(100% - 20px*2);
+  padding: 20px;
+}
+/* line 385, ../sass/product.scss */
+#box .content .main > * {
+  float: left;
+  display: inline-block;
+  width: calc(50% - 16px / 2);
+}
+/* line 389, ../sass/product.scss */
+#box .content .main > * + * {
+  margin-left: 16px;
+}
+/* line 394, ../sass/product.scss */
+#box .content .main .left .upload {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 115px;
+  line-height: 50px;
+  background-color: #ebebeb;
+  font-size: 30px;
+}
+/* line 403, ../sass/product.scss */
+#box .content .main .left b {
+  display: inline-block;
+  width: 100%;
+  color: #757575;
+  height: 16px;
+  font-size: 16px;
+}
+/* line 410, ../sass/product.scss */
+#box .content .main .left .imgs {
+  display: inline-block;
+  width: 100%;
+  margin-top: 8px;
+}
+/* line 414, ../sass/product.scss */
+#box .content .main .left .imgs > * {
+  display: inline-block;
+  float: left;
+  width: calc((100% - 8px *2) / 3);
+  height: 126px;
+  overflow: hidden;
+}
+/* line 420, ../sass/product.scss */
+#box .content .main .left .imgs > * > img {
+  width: 100%;
+}
+/* line 423, ../sass/product.scss */
+#box .content .main .left .imgs > *:nth-child(3n + 2) {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+/* line 427, ../sass/product.scss */
+#box .content .main .left .imgs > *:nth-child(n + 4) {
+  margin-top: 8px;
+}
+/* line 434, ../sass/product.scss */
+#box .content .main .right {
+  text-align: left;
+}
+/* line 436, ../sass/product.scss */
+#box .content .main .right > * {
+  display: inline-block;
+  width: 100%;
+}
+/* line 440, ../sass/product.scss */
+#box .content .main .right > b {
+  height: 22px;
+  line-height: 22px;
+}
+/* line 443, ../sass/product.scss */
+#box .content .main .right > b:not(:first-child) {
+  margin-top: 20px;
+}
+/* line 447, ../sass/product.scss */
+#box .content .main .right > input {
+  margin-top: 8px;
+  width: calc(100% - 16px*2);
+  padding: 8px 16px;
+  font-size: 16px;
+}
+/* line 453, ../sass/product.scss */
+#box .content .main .right > textarea {
+  margin-top: 8px;
+  width: calc(100% - 16px*2);
+  height: 126px;
+  line-height: 21px;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+/* line 461, ../sass/product.scss */
+#box .content .main .right .set {
+  display: inline-block;
+  border: 1px solid #d8d8d8;
+  height: 38px;
+  border-radius: 4px;
+  overflow: hidden;
+  width: calc(50% - 8px);
+}
+/* line 468, ../sass/product.scss */
+#box .content .main .right .set > * {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 38px;
+  line-height: 38px;
+}
+/* line 475, ../sass/product.scss */
+#box .content .main .right .set + * {
+  margin-left: 8px;
+}
+/* line 478, ../sass/product.scss */
+#box .content .main .right .set span {
+  background-color: #ebebeb;
+  color: #55595c;
+  font-size: 16px;
+  text-align: center;
+}
+/* line 484, ../sass/product.scss */
+#box .content .main .right .set input,
+#box .content .main .right .set select {
+  text-align: right;
+  font-size: 16px;
+  color: black;
+  border: 0;
+}
+/* line 490, ../sass/product.scss */
+#box .content .main .right .set input:focus,
+#box .content .main .right .set select:focus {
+  outline: 0;
+}
+/* line 497, ../sass/product.scss */
+#box .content .main .right .n2 > *,
+#box .content .main .right .n3 > * {
+  display: inline-block;
+  float: left;
+}
+/* line 503, ../sass/product.scss */
+#box .content .main .right .n2 > * {
+  width: calc((100% - 8px * 2) / 2);
+}
+/* line 509, ../sass/product.scss */
+#box .content .main .right .n3 + .n3 {
+  margin-top: 8px;
+}
+/* line 512, ../sass/product.scss */
+#box .content .main .right .n3 > * {
+  width: calc((100% - 8px * 3) / 3);
+}
+/* line 516, ../sass/product.scss */
+#box .content .main .right .add {
+  display: inline-block;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #000;
+  margin-left: 0;
+  margin-top: 8px;
+  text-align: center;
+}
+/* line 528, ../sass/product.scss */
+#box .content .main .right .add:after {
+  content: '+';
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 536, ../sass/product.scss */
+#box .content .main .bottom {
+  width: 100%;
+  height: 48px;
+  margin-top: 30px;
+  margin-left: 0;
+}
+/* line 541, ../sass/product.scss */
+#box .content .main .bottom > * {
+  float: right;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+}
+/* line 547, ../sass/product.scss */
+#box .content .main .bottom a {
+  padding: 0 12px;
+  text-decoration: none;
+  color: #757575;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 554, ../sass/product.scss */
+#box .content .main .bottom button {
+  border: 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+}
+/* line 564, ../sass/product.scss */
+#box .cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
